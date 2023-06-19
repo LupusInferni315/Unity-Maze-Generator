@@ -5,4 +5,6 @@ using UnityEngine;
 public abstract class MazeVisualizer : MonoBehaviour
 {
     public abstract void GenerateMazeVisual ( Maze maze );
+    
+    public abstract void Clear();
 }
