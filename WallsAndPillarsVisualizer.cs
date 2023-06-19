@@ -91,4 +91,12 @@ public class WallsAndPillarsVisualizer : MazeVisualizer
             _ = Instantiate ( m_WallPrefab, position, Quaternion.Euler ( euler ), transform );
         }
     }
+
+    public override void Clear ()
+    {
+        for ( int i = transform.childCount; i >= 0; i-- )
+        {
+            Destroy ( transform.GetChild ( 0 ).gameObject );
+        }
+    }
 }
