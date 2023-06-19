@@ -36,7 +36,7 @@ public class WallsAndPillarsVisualizer : MazeVisualizer
                 if ( y == maze.Height - 1 )
                     SpawnWallIfTrue ( cell, Direction.North, floorPosition );
 
-                /*
+                /* this isn't working right, so I've opted for a 'brute' force approach of spawning pillars at every corner as seen below
                 if ( x < maze.Width - 1 && y < maze.Height - 1 )
                 {
                     bool e = maze [ x, y ].GetWall ( Direction.East );
